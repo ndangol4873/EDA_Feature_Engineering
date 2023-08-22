@@ -11,3 +11,6 @@
 #### 7. df.select_dtypes(include=['int64','float64']).columns -- Numerical field detail.
 #### 8. df.groupby(['Aggregate rating', 'Rating color', 'Rating text']).size() -- Grouping Operation.
 #### 9.df[['Country','Currency']].groupby(['Country','Currency']).size().reset_index() -- Grouping Operation into dataframe
+
+#### Handelling Categorical feature Gender in to Numerical Feature
+#### 10. ## Updating the Gender Column with M = 1 and F = 0 df.Gender = df.Gender.map({'F':0, 'M':1})
